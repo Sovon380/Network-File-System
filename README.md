@@ -32,3 +32,22 @@ An integrated Admin Panel enables administrators to monitor users, track file st
 
 ## 📁 Project Structure
 
+nfs_web_ui/
+│
+├── nfs_web.py # Main Flask Application
+├── users.json # User Database (hashed passwords)
+├── activity.log # Activity Log File
+├── shared_files/ # Per-user file storage folders
+│
+├── templates/ # HTML Templates (Bootstrap Styled)
+│ ├── login.html
+│ ├── register.html
+│ ├── dashboard.html
+│ ├── view_shares.html
+│ ├── upload.html
+│ ├── change_password.html
+│ └── admin.html
+│
+├── requirements.txt # Python dependencies
+└── .gitignore # Git Ignore File
+
