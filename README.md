@@ -51,3 +51,81 @@ nfs_web_ui/
 ├── requirements.txt # Python dependencies
 └── .gitignore # Git Ignore File
 
+
+---
+
+## ⚙ Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/nfs-web-ui.git
+cd nfs-web-ui
+
+2️⃣ Setup Python Virtual Environment
+bash
+Copy
+python3 -m venv venv
+source venv/bin/activate
+3️⃣ Install Dependencies
+bash
+Copy
+pip install -r requirements.txt
+4️⃣ Initialize Admin User
+Generate hashed password for admin user:
+
+bash
+Copy
+python
+python
+Copy
+from werkzeug.security import generate_password_hash
+import json
+
+users = {"admin": generate_password_hash("your_admin_password_here")}
+with open("users.json", "w") as f:
+    json.dump(users, f)
+exit()
+🚀 Running The Application
+Inside your virtual environment:
+
+bash
+Copy
+python nfs_web.py
+Application will be available at:
+
+arduino
+Copy
+http://localhost:5000
+🔒 Security Note
+Ensure this app is deployed inside secure networks.
+
+Never expose on public-facing servers without additional security layers.
+
+Consider switching to SQLite or PostgreSQL for production-grade database storage.
+
+Setup HTTPS for secure communication.
+
+🏗️ Future Improvements
+🔐 Password reset (forgot password)
+
+📦 File size restrictions
+
+🧹 Admin user deletion capability
+
+📂 Global file usage statistics
+
+🐳 Docker deployment
+
+🖥️ Production deployment instructions
+
+📜 License
+MIT License. Feel free to use and modify for personal or educational projects.
+
+🤝 Author
+Developed By: Sovon Mallick
+Technologies: Python, Flask, Bootstrap, Werkzeug
+
+🙏 Special Thanks
+To all contributors of Flask and open-source community ❤️
+
