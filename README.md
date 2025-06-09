@@ -119,12 +119,12 @@ Setup HTTPS for secure communication.
 
 🖥️ Production deployment instructions
 
-📜 License
+## 📜 License
 MIT License. Feel free to use and modify for personal or educational projects.
 
-🤝 Author
+## 🤝 Author
 Developed By: Sovon Mallick
 Technologies: Python, Flask, Bootstrap, Werkzeug
 
-🙏 Special Thanks
+## 🙏 Special Thanks
 To all contributors of Flask and open-source community ❤️
