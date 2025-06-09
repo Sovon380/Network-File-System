@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Shared Files</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h3>📂 My Files</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Filename</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for file in shared_files %}
+            <tr>
+                <td>{{ file }}</td>
+                <td>
+                    <a href="{{ url_for('download_file', filename=file) }}" class="btn btn-sm btn-primary">⬇ Download</a>
+                    <a href="{{ url_for('delete_file', filename=file) }}" class="btn btn-sm btn-danger">🗑 Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>
+
