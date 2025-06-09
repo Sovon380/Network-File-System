@@ -52,6 +52,7 @@ nfs_web_ui/
 ├── requirements.txt        # Python dependencies
 └── .gitignore              # Git Ignore File
 
+```
 
 ## ⚙ Installation
 
@@ -60,25 +61,26 @@ nfs_web_ui/
 ```bash
 git clone https://github.com/your-username/nfs-web-ui.git
 cd nfs-web-ui
-2️⃣ Setup Python Virtual Environment
-bash
-Copy
+```
+### 2️⃣ Setup Python Virtual Environment
+```bash
 python3 -m venv venv
 source venv/bin/activate
-3️⃣ Install Dependencies
-bash
-Copy
+```
+
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-4️⃣ Initialize Admin User
+```
+### 4️⃣ Initialize Admin User
 Generate hashed password for admin user:
 
-bash
-Copy
+```bash
 python
+```
 Then inside the Python shell:
 
-python
-Copy
+```bash
 from werkzeug.security import generate_password_hash
 import json
 
@@ -86,18 +88,18 @@ users = {"admin": generate_password_hash("your_admin_password_here")}
 with open("users.json", "w") as f:
     json.dump(users, f)
 exit()
-🚀 Running The Application
+```
+## 🚀 Running The Application
 Inside your virtual environment:
 
-bash
-Copy
+```bash
 python nfs_web.py
+```
 The application will be available at:
-
-bash
-Copy
+```bash
 http://localhost:5000
-🔒 Security Notes
+```
+## 🔒 Security Notes
 Ensure this app is deployed inside secure networks.
 
 Never expose on public-facing servers without additional security layers.
@@ -106,7 +108,7 @@ Consider switching to SQLite or PostgreSQL for production-grade database storage
 
 Setup HTTPS for secure communication.
 
-🏗️ Future Improvements
+## 🏗️ Future Improvements
 🔐 Password reset (forgot password)
 
 📦 File size restrictions
