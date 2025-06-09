@@ -59,7 +59,7 @@ nfs_web_ui/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/nfs-web-ui.git
+git clone https://github.com/Sovon380/Network-File-System.git
 cd nfs-web-ui
 ```
 ### 2️⃣ Setup Python Virtual Environment
@@ -126,6 +126,7 @@ MIT License. Feel free to use and modify for personal or educational projects.
 
 ## 🤝 Author
 Developed By: Sovon Mallick
+
 Technologies: Python, Flask, Bootstrap, Werkzeug
 
 ## 🙏 Special Thanks
